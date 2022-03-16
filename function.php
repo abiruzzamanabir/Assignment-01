@@ -99,5 +99,33 @@ function BodyMassIndex($weight,$height){
         echo "Your Height is {$height} Meter<br> Weight is {$weight} KG<br> Your BMI is {$BMI} & You're Obesity";
     }
 }
+/**
+ * Corrency Converter
+ */
 
+function currencyConvert($amount=null,$currency=null){
+
+    switch ($currency) {
+        case 'usd':
+            echo "$amount USD = " . 86.12 * $amount . " BDT";
+            break;
+
+        case 'cad':
+            echo "$amount CAD = " . 67.93 * $amount . " BDT";
+            break;
+        case 'pound':
+            echo "$amount POUND = " . 113.25 * $amount . " BDT";
+            break;
+        case 'euro':
+            echo "$amount EURO = " . 95.03 * $amount . " BDT";
+            break;
+        case 'won':
+            echo "$amount WON = " . 0.07 * $amount . " BDT";
+            break;
+
+        default:
+            echo "Please select currency";
+            break;
+        }
+    }
 ?>
