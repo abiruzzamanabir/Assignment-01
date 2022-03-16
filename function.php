@@ -79,6 +79,25 @@ function heading($title=null, $type='h1', $align='center', $fontFamily='arial', 
     return "<{$type} style='text-align:{$align};font-family:{$fontFamily};font-size:{$fontSize};color:{$color};'>{$title}</{$type}>";
 }
 
+/**
+ * Body Mass Index
+ */
 
+
+function BodyMassIndex($weight,$height){
+    $BMI=$weight/($height*$height);
+    if ($BMI<18.5) {
+        echo "Your Height is {$height} Meter<br> Weight is {$weight} KG<br> Your BMI is {$BMI} & You're Underweight";
+    }
+    else if ($BMI>=18.5 && $BMI<=24.9) {
+        echo "Your Height is {$height} Meter<br> Weight is {$weight} KG<br> Your BMI is {$BMI} & You're Normal weight";
+    }
+    else if ($BMI>=25 && $BMI<=29.9) {
+        echo "Your Height is {$height} Meter<br> Weight is {$weight} KG<br> Your BMI is {$BMI} & You're Overweight";
+    }
+    else if ($BMI>=30) {
+        echo "Your Height is {$height} Meter<br> Weight is {$weight} KG<br> Your BMI is {$BMI} & You're Obesity";
+    }
+}
 
 ?>
