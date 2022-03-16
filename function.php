@@ -32,10 +32,9 @@ else{
 }
 }
 
-
-//Rectangle Square Circle
-
-  
+/**
+ * Rectangle Square Circle
+ */
 
 function getArea($type=null, $length , $height){
     $area="";
@@ -62,5 +61,15 @@ function getArea($type=null, $length , $height){
 
     echo "Area of {$area_type} is {$area}";
 }
+
+/**
+ * Age Calculator
+ */
+
+function checkAge($birthYear){
+    $age=2022-$birthYear;
+    return "Your birth year {$birthYear} & now you're {$age} years old.";
+}
+
 
 ?>
