@@ -71,5 +71,14 @@ function checkAge($birthYear){
     return "Your birth year {$birthYear} & now you're {$age} years old.";
 }
 
+/**
+ * Dynamic headline
+ */
+
+function heading($title=null, $type='h1', $align='center', $fontFamily='arial', $fontSize=14, $color='red'){
+    return "<{$type} style='text-align:{$align};font-family:{$fontFamily};font-size:{$fontSize};color:{$color};'>{$title}</{$type}>";
+}
+
+
 
 ?>
