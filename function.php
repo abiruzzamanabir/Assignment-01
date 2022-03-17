@@ -128,4 +128,27 @@ function currencyConvert($amount=null,$currency=null){
             break;
         }
     }
+
+/**
+ * Capital Small
+ */
+function capitalSmall($text=null, $type=null ){
+
+    switch ($type) {
+        case 'c':
+            echo "<h1 style='text-transform:uppercase;'>{$text}</h1>";
+            break;
+
+        case 's':
+            echo "<h1 style='text-transform:lowercase;'>{$text}</h1>";
+            break;
+        
+        default:
+            echo "Something Wont Wrong";
+            break;
+    }
+}
+
+
+
 ?>
