@@ -1,9 +1,9 @@
 <?php
 
-$input=4;
-
+$input=2;
+echo "2 er namta<br>";
 for ($i=1; $i <=10 ; $i++) { 
     $result= $input*$i;
-    echo "{$input} * {$i} = {$result} <br>";
+    echo "{$input} X {$i} = {$result} <br>";
 }
 ?>

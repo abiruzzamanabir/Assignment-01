@@ -150,5 +150,4 @@ function capitalSmall($text=null, $type=null ){
 }
 
 
-
 ?>
